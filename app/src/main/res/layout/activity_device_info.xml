@@ -5,6 +5,157 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/app_bg"
-    tools:context=".DeviceInfoActivity">
+    tools:context=".DeviceInfoActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="384dp"
+        android:layout_height="158dp"
+        android:background="@mipmap/mizu_bg"
+        android:gravity="center"
+        android:text="MiZu"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="405dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+
+        android:background="@mipmap/textbg"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@mipmap/device_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Device Name" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:text="Device Name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="405dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/textbg"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/device_id" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Device Id" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65dp"
+            android:text="Device ID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_puff"
+        android:layout_width="405dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/textbg"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/puff_count" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Puff Count" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="205dp"
+            app:srcCompat="@mipmap/ic_arrows_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_setting"
+        android:layout_width="405dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/textbg"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_puff">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@mipmap/setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Settings" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="220dp"
+            app:srcCompat="@mipmap/ic_arrows_right" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
